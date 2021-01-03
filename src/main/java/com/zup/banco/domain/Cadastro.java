@@ -75,7 +75,7 @@ public class Cadastro {
 	public void setDataNascimento(LocalDate dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
-	
+
 	public CadastroResponse toResponse() {
 		return new CadastroResponse(this.id, this.nome);
 	}

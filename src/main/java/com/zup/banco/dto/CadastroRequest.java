@@ -11,7 +11,7 @@ import org.hibernate.validator.constraints.br.CPF;
 import com.zup.banco.domain.Cadastro;
 
 public class CadastroRequest {
-
+	
 	@NotBlank(message = "nome em branco!")
 	private String nome;
 	@NotBlank(message = "email em branco!")
@@ -22,7 +22,7 @@ public class CadastroRequest {
 	private String cpf;
 	@NotNull(message = "Data em branco!")
 	private LocalDate dataNascimento;
-
+	
 	public Cadastro toModel() {
 		return new Cadastro(this.nome, this.email, this.cpf, this.dataNascimento);
 	}
@@ -60,4 +60,5 @@ public class CadastroRequest {
 	}
 	
 	
+
 }
